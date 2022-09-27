@@ -1,4 +1,6 @@
 #!/bin/bash
+$DOMAIN=test.local
+$HOSTNAME=ipa
 echo "Enter your domain (default=test.local): "
 read DOMAIN
 echo "Enter hostname of your server (default=ipa):"
