@@ -6,6 +6,6 @@ read HOSTNAME
 hostnamectl set-hostname $HOSTNAME+$DOMAIN
 echo "Enter youк local ip: "
 read IP
-echo "$IP    $HOSTNAME+$DOMAIN   $HOSTNAME" | tee -a /etc/hosts
+echo "$IP    $HOSTNAME$DOMAIN   $HOSTNAME" | tee -a /etc/hosts
 apt-get update && apt-get upgrade -y
 apt-get install rng-tools -y
